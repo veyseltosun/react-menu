@@ -4,7 +4,7 @@ import Menu from "./Menu";
 import meals from "./data";
 
 
-const allCatagories = ["all", "milkshakes", "veysel's", ...new Set(meals.map( (meal) => meal.category))]
+const allCatagories = ["all", "veys",  ...new Set(meals.map( (meal) => meal.category))]
 
 
 
@@ -19,10 +19,11 @@ function App() {
       return;
 
     }
-    if(category === "milkshakes" || "veysel's") {
+    if(category === "veys") {
       setMenuElements(meals)
       return;
     }
+    
     const newMeals = meals.filter((meal) => meal.category === category);
     setMenuElements (newMeals);
   }
