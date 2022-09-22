@@ -7,7 +7,7 @@ function Menu({meals}) {
         const{id, title, img, desc, price} = menuElement;
         return(
           <article className='menu-item' key={id} >
-            <img src={img} alt={title} classname = "photo"></img>
+            <img src={img} alt={title} className="photo"></img>
             <div className = "item-info">
 
               <header > 
